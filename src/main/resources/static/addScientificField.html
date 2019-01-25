@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<style>
+table {
+    font-family: arial, sans-serif;
+  
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+h4{
+	margin-left:21.5%;
+	color:white;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(odd) {
+    background-color: #003366;
+    color:white;
+    
+}
+.TextBox > div {
+    margin:0 auto;
+    width:250px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+}
+#articleInfo {
+  outline: 2px solid white;
+
+}
+#taskId{
+	display:none;
+}
+#scfieldId{
+	display:none;
+}
+.bg {
+    /* The image used */
+    background-image: url("science.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.panel{
+	width:800px;
+	margin-left: 283px;
+    margin-right: auto;
+	
+	
+}
+
+#buttonCo{
+margin-left: 283px;
+height:50px;
+}
+</style>
+	<head>
+		<meta charset="UTF-8">
+		<title>All scientific fields</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<script src="scripts/addScientificField.js"></script>
+		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		
+		<script src="toastr/toastr.min.js"></script>
+    	<link href="toastr/toastr.min.css" rel="stylesheet"/>
+	</head>
+	
+	<body>
+	<div class="bg">
+	
+		 <div  id="fieldsDiv">
+	    <br/><br/>
+	    
+	    	<h4>Scientific fields</h4>
+	        <table width="200" id="fieldsTable">
+	        	<tr>
+	        		
+	        	 	<th>Name</th>
+	        	 	
+	        	 	
+	        	 	
+	        	 	<th></th>
+	        	 	
+	        	 	
+	        	</tr>
+	        </table>
+	      
+	     </div>
+	     <br/>
+	     <div class="panel panel-primary">
+	<div class="panel-heading">Article info</div>
+	<div  class="panel-body" ><div  id="articleInfo"></div></div>
+	</div>
+	     
+	     <br/>
+	     
+	                         <div id="addCo">
+			                    	<button id="buttonCo" onclick="buttonCoauthorClick()" class="btn btn-success"><span class="glyphicon glyphicon-arrow-right"></span>Add coauthors</button>   	
+			                    </div>
+			                    
+	     
+	   
+	    </div>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	</body>
+</html>
